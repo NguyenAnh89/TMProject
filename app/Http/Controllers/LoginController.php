@@ -22,7 +22,7 @@ class LoginController extends Controller
     {
         $login_time = null;
         $standard_date_time = new DateTime();
-        date_time_set($standard_date_time,10,30,00);
+        date_time_set($standard_date_time,8,30,00);
         $this->validate($request, [
             'email'   => 'required|email',
             'password'  => 'required|alphaNum|min:3'
